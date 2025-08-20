@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>The Number</title>
+  <!-- Tailwind CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="min-h-screen bg-gradient-to-br from-black via-gray-900 to-black text-white font-sans">
+
+  <!-- Navbar -->
+  <nav class="flex items-center justify-between px-6 py-4 bg-black/40 backdrop-blur-md border-b border-cyan-500/30">
+    <div class="flex items-center space-x-3">
+      <img src="logo.png" alt="The Number Logo" class="h-10 w-10 rounded-full" />
+      <span class="font-bold text-xl tracking-wide text-cyan-400">The Number</span>
+    </div>
+  </nav>
+
+  <!-- Hero -->
+  <section class="text-center py-20 px-6 relative overflow-hidden">
+    <img src="logo.png" alt="The Number Logo"
+         class="h-28 w-28 mb-6 mx-auto rounded-full drop-shadow-[0_0_25px_#00faff]"
+         id="logo" />
+    <h1 class="text-5xl md:text-6xl font-extrabold bg-gradient-to-r from-cyan-400 to-fuchsia-500 bg-clip-text text-transparent">
+      The Number
+    </h1>
+    <p class="mt-4 text-lg text-gray-300 max-w-2xl mx-auto">
+      The Number ($NUM) is a community-driven token that unites numbers, technology, and collective power. 
+      Built on Ethereum/BSC for full transparency and decentralization.
+    </p>
+  </section>
+
+  <!-- About -->
+  <section class="py-20 px-6 text-center">
+    <h2 class="text-3xl font-bold mb-6 text-cyan-400">Favorite Your Crypto</h2>
+    <p class="max-w-3xl mx-auto text-gray-300">
+      100% of the token supply is dedicated to the community — no team allocations, no hidden wallets, just pure decentralization.
+    </p>
+  </section>
+
+  <!-- Tokenomics -->
+  <section class="py-20 px-6 bg-black/50">
+    <h2 class="text-3xl font-bold mb-12 text-center text-fuchsia-400">Tokenomics</h2>
+    <div class="grid md:grid-cols-1 gap-6 max-w-3xl mx-auto">
+      <div class="p-6 rounded-2xl bg-gradient-to-br from-cyan-500/20 to-fuchsia-500/20 border border-cyan-400/30 shadow-lg text-center">
+        <h3 class="text-xl font-bold text-cyan-300">Community</h3>
+        <p class="text-5xl font-extrabold text-fuchsia-400 mt-2">100%</p>
+        <p class="text-gray-400 mt-2">All tokens belong to the community</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Roadmap -->
+  <section class="py-20 px-6">
+    <h2 class="text-3xl font-bold mb-12 text-center text-cyan-400">Roadmap</h2>
+    <div class="grid md:grid-cols-2 gap-6 max-w-4xl mx-auto">
+      <div class="p-6 rounded-2xl bg-gradient-to-br from-fuchsia-500/20 to-cyan-500/20 border border-fuchsia-400/30 shadow-lg text-center">
+        <h3 class="text-2xl font-bold text-fuchsia-300">Q3 2025</h3>
+        <ul class="text-gray-300 mt-3 space-y-2">
+          <li>• Token Launch</li>
+          <li>• Website Release</li>
+        </ul>
+      </div>
+      <div class="p-6 rounded-2xl bg-gradient-to-br from-fuchsia-500/20 to-cyan-500/20 border border-fuchsia-400/30 shadow-lg text-center">
+        <h3 class="text-2xl font-bold text-fuchsia-300">Q4 2025</h3>
+        <ul class="text-gray-300 mt-3 space-y-2">
+          <li>• Soon</li>
+        </ul>
+      </div>
+      <div class="p-6 rounded-2xl bg-gradient-to-br from-fuchsia-500/20 to-cyan-500/20 border border-fuchsia-400/30 shadow-lg text-center">
+        <h3 class="text-2xl font-bold text-fuchsia-300">Q1 2026</h3>
+        <ul class="text-gray-300 mt-3 space-y-2">
+          <li>• Soon</li>
+        </ul>
+      </div>
+      <div class="p-6 rounded-2xl bg-gradient-to-br from-fuchsia-500/20 to-cyan-500/20 border border-fuchsia-400/30 shadow-lg text-center">
+        <h3 class="text-2xl font-bold text-fuchsia-300">Q2 2026</h3>
+        <ul class="text-gray-300 mt-3 space-y-2">
+          <li>• Soon</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- Community -->
+  <section class="py-20 px-6 bg-black/40 text-center">
+    <h2 class="text-3xl font-bold mb-6 text-fuchsia-400">Join the Community</h2>
+    <div class="flex justify-center space-x-6">
+      <a href="#" class="p-4 rounded-full bg-cyan-500/20 hover:bg-cyan-500/40 transition">??</a>
+      <a href="#" class="p-4 rounded-full bg-fuchsia-500/20 hover:bg-fuchsia-500/40 transition">??</a>
+      <a href="#" class="p-4 rounded-full bg-indigo-500/20 hover:bg-indigo-500/40 transition">??</a>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="py-6 text-center text-gray-400 border-t border-gray-700">
+    © 2025 The Number – Powered by Community
+  </footer>
+
+  <!-- Animasi logo -->
+  <script>
+    const logo = document.getElementById("logo");
+    if (logo) {
+      logo.animate([
+        { transform: "scale(1)", filter: "drop-shadow(0 0 20px #00faff)" },
+        { transform: "scale(1.1)", filter: "drop-shadow(0 0 40px #00faff)" },
+        { transform: "scale(1)", filter: "drop-shadow(0 0 20px #00faff)" }
+      ], {
+        duration: 3000,
+        iterations: Infinity
+      });
+    }
+  </script>
+
+</body>
+</html>
